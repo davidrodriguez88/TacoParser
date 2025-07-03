@@ -21,21 +21,13 @@
                 logger.LogWarning("Less than three items. Incomplete data");
                 return null; 
             }
-
-            // TODO: Grab the latitude from your array at index 0
+            
             var latitude = double.Parse(cells[0]);
             
-            // TODO: Grab the longitude from your array at index 1
             var longitude = double.Parse(cells[1]);
             
-            // TODO: Grab the name from your array at index 2
             var name = cells[2];
             
-            // TODO: Create an instance of the Point Struct
-            // TODO: Set the values of the point correctly (Latitude and Longitude) 
-
-            // TODO: Create an instance of the TacoBell class
-            // TODO: Set the values of the class correctly (Name and Location)
             var point = new Point();
             point.Latitude = latitude;
             point.Longitude = longitude;
@@ -43,9 +35,6 @@
             var tacoBell = new TacoBell();
             tacoBell.Name = name;
             tacoBell.Location = point;
-            
-            // TODO: Then, return the instance of your TacoBell class,
-            // since it conforms to ITrackable
 
             return tacoBell;
         }
