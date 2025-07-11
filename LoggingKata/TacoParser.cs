@@ -18,7 +18,7 @@
             if (cells.Length < 3)
             {
                 // Log error message and return null
-                logger.LogWarning("Less than three items. Incomplete data");
+                logger.LogError("Less than three items. Incomplete data");
                 return null; 
             }
             
